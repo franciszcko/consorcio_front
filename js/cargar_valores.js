@@ -22,7 +22,7 @@ window.onload = function cargar() {
            //Request a farmacias 
             fetch(proxy_cors+endpoint_farmacias,requestOptions)
                 .then(response => {
-                                 
+                                  
                    return response.json();
                 })           
                 .then(result => {                    
@@ -72,9 +72,11 @@ window.onload = function cargar() {
            
                 var option = document.createElement("option");
                 option.text = array[i];
-                option.value = i+1;
+              //  option.value = i+1;
                 select.add(option);             
         }
+        
+
     }
 
 
@@ -123,6 +125,8 @@ window.onload = function cargar() {
                 option.value = valueOption;
                 select.add(option);             
         }
-    }
+    } 
+    
+    
 
 }

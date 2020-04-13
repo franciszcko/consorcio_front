@@ -3,25 +3,33 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Buscar Farmacias</title>
       <script src="js/cargar_valores.js"></script> 
       
    </head>
    <body>
+      <h3>Buscar Farmacias</title>
    
-      <form action="http://localhost:5010/api/v1/Farmacias/turno" method="post" id="form1">
-      <div>
-         <select id="comunas" name="comuna">          
-         </select> 
-      </div>
+      <form action="http://localhost:5011/api/v1/Farmacias/turno" method="post" id="form1">
+      <!-- <form method="post" id="form1">   -->
+         <div>
+            <select id="comunas" name="comuna">          
+            </select> 
+         </div>
 
-   <div >
-      <select id="farmacias" name="farmacia">
-         <option value = 0>Seleccione farmacia</option>  
-      </select> 
-   </div>
+         <div >
+            <select id="farmacias" name="farmacia">
+               <option value = 0>Seleccione farmacia</option>  
+            </select> 
+         </div>
 
-   </form>
-   <button type="submit" form="form1" value="Submit">Buscar Farmacias</button>
+       </form>
+       <button type="submit" form="form1" value="Submit">Buscar Farmacias</button>
+       <div id="lista_farmacias"> 
+
+       </div>
+      <!--   <script src="js/services.js"></script>  -->
    </body>
+   
+  
 </html>
